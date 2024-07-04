@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.cdnfonts.com/css/ds-digital" rel="stylesheet" />
+    <title>Calculadora</title>
+  </head>
+  <body>
+    <h1>Calculadora</h1>
+    <div class="calculadora">
+      <div class="visor">
+        <input type="text" id="visorN" readonly />
+      </div>
+
+      <div class="numeros">
+        <input type="button" class="valores" value="7" onclick="adicionar(7)" />
+        <input type="button" class="valores" value="8" onclick="adicionar(8)" />
+        <input type="button" class="valores" value="9" onclick="adicionar(9)" />
+        <input
+          type="button"
+          class="valores"
+          value="/"
+          onclick="adicionar('/')"
+        />
+
+        <input type="button" class="valores" value="4" onclick="adicionar(4)" />
+        <input type="button" class="valores" value="5" onclick="adicionar(5)" />
+        <input type="button" class="valores" value="6" onclick="adicionar(6)" />
+        <input
+          type="button"
+          class="valores"
+          value="*"
+          onclick="adicionar('*')"
+        />
+
+        <input type="button" class="valores" value="1" onclick="adicionar(1)" />
+        <input type="button" class="valores" value="2" onclick="adicionar(2)" />
+        <input type="button" class="valores" value="3" onclick="adicionar(3)" />
+        <input
+          type="button"
+          class="valores"
+          value="-"
+          onclick="adicionar('-')"
+        />
+
+        <input type="button" class="valores" value="0" onclick="adicionar(0)" />
+        <input
+          type="button"
+          class="valores"
+          value="."
+          onclick="adicionar('.')"
+        />
+        <input type="button" class="valores" value="C" onclick="limpar()" />
+        <input
+          type="button"
+          class="valores"
+          value="+"
+          onclick="adicionar('+')"
+        />
+
+        <input
+          type="button"
+          id="igual"
+          class="valores"
+          value="="
+          onclick="calcular()"
+        />
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
